@@ -1,0 +1,21 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Czemu w zanadto jednej osobie?");
+        System.out.println("Tej a nie innej? I co tu robię?");
+        System.out.println("W dzień co jest wtorkiem? W domu nie gnieździe?");
+        System.out.println("W skórze nie łusce? Z twarzą nie liściem?");
+        System.out.println("Dlaczego tylko raz osobiście?");
+        System.out.println("Właśnie na ziemi? Przy małej gwieździe?");
+        System.out.println("Po tylu erach nieobecności?");
+        System.out.println("Za wszystkie czasy i wszystkie glony?");
+        System.out.println("Za jamochłony i nieboskłony?");
+        System.out.println("Akurat teraz? Do krwi i kości?");
+        System.out.println("Sama u siebie z sobą? Czemu");
+        System.out.println("Nie obok ani sto mil stąd,");
+        System.out.println("nie wczoraj, ani sto lat temu");
+        System.out.println("siedzę i patrzę w ciemny kąt");
+        System.out.println("– tak jak z wzniesionym nagle łbem");
+        System.out.println("patrzy warczące zwane psem?");
+    }
+}

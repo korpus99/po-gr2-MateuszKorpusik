@@ -1,0 +1,7 @@
+public class Main {
+
+    public static void main(String[] args) {
+        String imie ="Mateusz Korpusik";
+        System.out.println(imie.toUpperCase());
+    }
+}

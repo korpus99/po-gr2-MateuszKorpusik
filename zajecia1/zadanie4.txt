@@ -1,0 +1,12 @@
+public class Main {
+
+    public static void main(String[] args) {
+        double saldo = 1000;
+        double rokpierwszy = saldo+saldo*0.06;
+        double rokdrugi = rokpierwszy+rokpierwszy*0.06;
+        double roktrzeci = rokdrugi+rokdrugi*0.06;
+        System.out.println(rokpierwszy);
+        System.out.println(rokdrugi);
+        System.out.println(roktrzeci);
+    }
+}

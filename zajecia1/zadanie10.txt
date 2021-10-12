@@ -1,0 +1,6 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("1. Szybcy i Wściekli.\n" + "2. Gwiezdne Wojny.\n" + "3. Harry Potter.");
+    }
+}
