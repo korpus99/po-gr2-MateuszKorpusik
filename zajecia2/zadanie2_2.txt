@@ -1,0 +1,20 @@
+package com.company;
+
+import java.util.Scanner;
+
+import static java.lang.Math.*;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+		
+		int counter = 0;
+        for(int i = 0; i<=liczby.length-1; i++){
+            liczby[i] = scn.nextDouble();
+            if(liczby[i] > 0)
+                counter+=2*liczby[i];
+        }
+        System.out.println(counter);
+    }
+}
