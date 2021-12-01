@@ -1,0 +1,49 @@
+//// Zadanie 1
+
+//package com.company;
+//
+//import java.util.ArrayList;
+//
+//public class Main {
+//    public static ArrayList<Integer> merge(ArrayList<Integer> a, ArrayList<Integer> b) {
+//        ArrayList<Integer> tmp = new ArrayList<Integer>();
+//        for(int i = 0; i <= a.size()-1; i++) {
+//            tmp.add(a.get(i));
+//            tmp.add(b.get(i));
+//        }
+//
+//        return tmp;
+//    }
+//
+//    public static void main(String[] args) {
+//        ArrayList<Integer> a = new ArrayList<>();
+//        ArrayList<Integer> b = new ArrayList<>();
+//        a.add(5);
+//        a.add(4);
+//        a.add(5);
+//        b.add(1);
+//        b.add(23);
+//        b.add(2);
+//        System.out.println(merge(a, b));
+//    }
+//}
+
+//// Zadanie 2
+//package com.company;
+//
+//public class Main {
+//    public static String modify(String str) {
+//        String newString = "";
+//        int length = str.length();
+//        if(length%2==0) {
+//            newString = str.toUpperCase();
+//        } else {
+//            newString = new StringBuilder().append(str).reverse().toString();
+//        }
+//        return newString;
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(modify("alle"));
+//    }
+//}
