@@ -1,0 +1,94 @@
+import pl.imiajd.korpus.Osoba;
+
+import java.util.Collections;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.lang.Comparable;
+import java.lang.Cloneable;
+
+public class TestOsoba{
+
+    public static void main(String[] args){
+        ArrayList<Osoba> grupa = new ArrayList<Osoba>();
+        LocalDate data1 = LocalDate.of(1999, 07, 21);
+        LocalDate data2 = LocalDate.of(2002, 05, 15);
+
+        grupa.add(new Osoba("Kowalski", data1));
+        grupa.add(new Osoba("Nowak", data1));
+        grupa.add(new Osoba("Kowalski", data2));
+        grupa.add(new Osoba("Nowak", data2));
+        grupa.add(new Osoba("Nowak", data1));
+
+        System.out.println(grupa);
+        Collections.sort(grupa);
+        System.out.println(grupa);
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------
+
+import pl.imiajd.korpus.Osoba;
+import pl.imiajd.korpus.Student;
+
+import java.util.Collections;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.lang.Comparable;
+import java.lang.Cloneable;
+
+public class TestStudent{
+
+    public static void main(String[] args){
+        ArrayList<Osoba> grupa = new ArrayList<Osoba>();
+        LocalDate data1 = LocalDate.of(1999, 07, 21);
+        LocalDate data2 = LocalDate.of(2002, 05, 15);
+
+        grupa.add(new Student("Kowalski", data1, 4.4));
+        grupa.add(new Student("Nowak", data1, 3.1));
+        grupa.add(new Student("Kowalski", data2, 3.7));
+        grupa.add(new Student("Nowak", data2, 3.7));
+        grupa.add(new Student("Nowak", data1, 4.1));
+
+        System.out.println(grupa);
+        Collections.sort(grupa);
+        System.out.println(grupa);
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class zadanie3 {
+    public static void main(String[] args) throws IOException {
+        String line = "";
+
+        ArrayList<String> as = new ArrayList<String>();
+        Scanner in = new Scanner(System.in);
+        String fileName = in.next();
+
+        FileReader fr = null;
+        try {
+            fr = new FileReader(fileName);
+        } catch (FileNotFoundException e) {
+            System.out.println(e.toString());
+            System.exit(-1);
+        }
+
+        BufferedReader bfr = new BufferedReader(fr);
+
+        while((line = bfr.readLine()) != null){
+            as.add(line);
+        }
+
+        System.out.println(as);
+        Collections.sort(as);
+        System.out.println(as);
+    }
+}
